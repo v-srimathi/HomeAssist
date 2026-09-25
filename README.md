@@ -61,6 +61,7 @@ The project focuses on demonstrating the technical principles of sensor acquisit
 # **6\. SYSTEM OVERVIEW**
 
 HomeAssist is built around a single Arduino Uno microcontroller. The controller sequentially evaluates five independent functional modules within its continuously executing loop() function.
+![block](block.jpeg)
 
 ### **Functional Modules**
 
@@ -162,6 +163,7 @@ Therefore, the exact:
 * and RC522 logic-level arrangement
 
 should be documented only after verification against the actual prototype and reliable component documentation.
+![schematic](schematic.jpeg)
 
 ---
 
@@ -222,10 +224,12 @@ The Arduino code directly establishes the following assignments:
 * RC522 MOSI → D11  
 * RC522 MISO → D12  
 * RC522 SCK → D13
+  ![circuit](circuit.jpeg)
 
 ---
 
 # **11\. MODULE DESCRIPTION AND WORKING PRINCIPLE**
+![module](module.jpeg)
 
 ## **11.1 RFID Access Detection Module**
 
@@ -245,6 +249,7 @@ The program records the activation time using millis(). After approximately **3 
 
 The RFID communication is then halted and the system resumes normal card detection.
 
+
 ### **Important Functional Limitation**
 
 The current software performs **RFID card detection and serial-number reading only**.
@@ -256,6 +261,7 @@ It does **not**:
 * reject unauthorized cards.
 
 Therefore, the documentation must describe this module as **RFID card detection with servo actuation**, rather than a fully authenticated access-control system.
+ ![rfid](rfidtesting.jpeg)
 
                    **Figure 3\. RFID Module Testing During Hardware Debugging.**
 
@@ -328,6 +334,7 @@ Because the implementation uses delay(7000), the main loop is temporarily blocke
 ---
 
 ## **11.5 Flame Detection and Buzzer Module**
+![flame](flame.jpeg)
 
 The flame sensor is connected to **A2**.
 
@@ -639,6 +646,7 @@ Observed results should therefore be entered only after the corresponding tests 
 ---
 
 # **16\. RESULTS**
+![final](final.jpeg)
 
 The HomeAssist project resulted in an integrated Arduino-based prototype containing five sensor-actuator functional sections:
 
