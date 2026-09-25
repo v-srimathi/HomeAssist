@@ -637,7 +637,7 @@ The exact physical defect is not specified because it was not formally identifie
 
 ### 15.2 VALIDATION NOTE
 
-### The above verification table documents the functional behavior implemented in the Arduino program. Physical hardware test observations and measured results were not recorded during the project documentation process; therefore, no physical PASS/FAIL results are claimed
+The above verification table documents the functional behavior implemented in the Arduino program. Physical hardware test observations and measured results were not recorded during the project documentation process; therefore, no physical PASS/FAIL results are claimed
 
 The code defines the expected control behavior, but actual hardware validation must be based on physical testing of the assembled prototype.
 
