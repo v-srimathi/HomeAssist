@@ -261,7 +261,7 @@ It does **not**:
 * reject unauthorized cards.
 
 Therefore, the documentation must describe this module as **RFID card detection with servo actuation**, rather than a fully authenticated access-control system.
- ![rfid](rfidtesting.jpeg)
+ ![rfid](rfid.jpeg)
 
                    **Figure 3\. RFID Module Testing During Hardware Debugging.**
 
